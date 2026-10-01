@@ -1,0 +1,59 @@
+# VS / build artifacts
+.vs/
+**/.vs/
+**/x64/
+**/Debug/
+**/Release/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.log
+Thumbs.db
+Desktop.ini
+
+# runtime / local-only
+imgui.ini
+*.exe
+*.dll
+*.lib
+.vscode/
+
+# local backups & one-off artifacts (not part of the source tree)
+_backup_pre_restructure/
+_artifacts_restructure/
+_rollback_sandbox/
+_release_stage/
+
+# local reference archives (never tracked)
+CT_Scripts */
+历史版本备份*/
+
+# runtime assets loaded from CWD
+BG.png
+AIMSHOOTNAME.txt
+_commit_msg.txt
+
+# local verification artifacts
+_backup*/
+_ui_*
+_release_stage/
+
+# local UI-port scratch (patch scripts, diffs, verification notes, screenshots)
+_uiwork/
+
+# 第19轮：运行时表种子/覆盖文件（每台机器的 tunables.bin 路径不同，不入库）
+GTA5_DMA/x64/Release/GTA5_DMA_tunables.txt
+GTA5_DMA/x64/Release/GTA5_DMA_patterns.txt
+GTA5_DMA/x64/Release/GTA5_DMA_diag.txt
+
+# 发布包（不纳入版本控制，由 Release 上传）
+GTA5-DMA-v*-win-x64.zip
